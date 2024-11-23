@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-// max 5 materii,max 30 de elevi in clasa
+
 typedef struct materie
 {
     char nume[20];
@@ -14,7 +14,7 @@ typedef struct elev
     char nume[20];
     char prenume[20];
     float medie_f;
-    int m; // nr materii
+    int m; 
     materie materii[5];
 }elev;
 
