@@ -2,19 +2,6 @@
 #include <string.h>
 using namespace std;
 
-/*
-    TODO: Definiti o structura de date numita "character" care sa 
-    aiba urmatoarele caracteristici:
-    - "name" numele caracterului exprimat printr-un sir de caractere
-    - "hp" (viata) exprimata printr-un nr. intreg
-    - "atk" (puterea de atac) exprimata printr-un nr. intreg
-    - "hp_regen" (regenerare in timpul luptei) exprimata printr-un bool
-        true daca are regenerare a vieti = 10/s
-        false daca nu
-    - "speed" (viteza atacului) exprimata printr-un nr. real(float)
-
-    ! Folositi typedef
-*/
 typedef struct Character
 {
     char name[20];
@@ -25,9 +12,6 @@ typedef struct Character
 }character;
 
 
-/* Scrieti o functie "fight" de tip character care primeste ca argument
-    2 variabile de tip character si returneaza player-ul invingator
-*/
 character fight(character p1, character p2)
 {
     character aux, winner;
@@ -61,9 +45,7 @@ character fight(character p1, character p2)
 }
 
 
-/* Scrieti o functie turneu care primeste un vector de variabile de tip
-    character si intoarce castigatorul turneului
-*/
+
 character turneu(character *participants, int n)
 {
     character winner = participants[0];
@@ -72,8 +54,8 @@ character turneu(character *participants, int n)
     return winner;
 }
 
-int main() {
-    /*"praslea mage elf pekka"*/
+int main() 
+{
     character x, y, z, t;
 
     strcpy(x.name, "Praslea");
